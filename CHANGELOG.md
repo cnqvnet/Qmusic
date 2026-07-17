@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.
 
 
 
-## 1.1.0 2026-07-15
+## 1.1.0 - 2026-07-15
 
 ### 删除
 
