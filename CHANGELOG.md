@@ -12,7 +12,22 @@ The format is based on [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.
 
 
 
-## 1.1.0 - 2026-07-15
+## 1.1.0 2026-07-15
+
+### 新增
+
+- 频谱特效，主界面(多彩波浪线)和迷你模式(柱形)都可以看到
+- EQ均衡器，内置8个音效，效果一般，欢迎点评。
+- 桌面歌词竖向排列。
+
+### 修复
+
+- 无法下载歌曲的问题，内置CA证书的问题
+- 更改排行榜的榜单布局为卡片式布局，同时增加抖动特效，更美观好看。
+- 音乐的音质更改为5个品质：顶级、超级、高清、标准、基础。
+- 修复迷你模式下左下角和右下角透明效果存在阴影的问题。
+- 更新所有依赖至最新版本，以后为常态，每月都更新。具体查看[package.json](./package.json)
+- 修复下载时高品质音乐文件映射错误，flac下载的时候还是MP3格式的问题。
 
 ### 删除
 
@@ -20,20 +35,26 @@ The format is based on [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.
 - 删除倍速播放按钮
 - 删除侧边栏是在线，本地，歌单的相关分组名称，简洁明了就行。
 
-### 修复
 
-- 无法下载歌曲的问题，内置CA证书的问题
-- 更改排行榜的榜单布局为卡片式布局，同时增加抖动特效，更美观好看。
-- 桌面歌词只能横向显示，无法竖向显示的问题
-- 音乐的音质更改为5个品质：顶级、超级、高清、标准、基础。
-- 修复迷你模式下左下角和右下角透明效果存在阴影的问题。
-- 更新所有依赖至最新版本，electron为43.1，具体查看package.json(./package.json)
+### Added
+- Spectrum effects are visible in both the main interface (multicolored wavy lines) and mini mode (bar graphs)
+- EQ Equalizer, with 8 built-in sound effects, average performance. Welcome to leave your feedback.
+- Lyrics are arranged vertically on the desktop.
 
-### 新增
+### Fixed
+- Issues with song downloads and built-in CA certificates
+- Change the leaderboard layout to a card-based design and add a shake effect for a more visually appealing look.
+The music quality can be adjusted to five levels: Premium, Super, HD, Standard, and Basic.
+- Fixed the issue of shadows appearing in the transparent effect at the bottom left and right corners in mini mode.
+Update all dependencies to the latest versions, with Electron at 43.1. For details, refer to package.json (./package.json)
+- Fixed the mapping error of high-quality music files during download, resolving the issue where FLAC files were still downloaded in MP3 format.
 
-- 频谱特效，主界面(多彩波浪线)和迷你模式(柱形)都可以看到
-- EQ均衡器，内置8个音效
+### Delete
+- Remove redundant themes, retaining only 2 sets: the default dark theme and the light theme. Eliminate the theme market, theme installation button, and other bulky, impractical features. The default theme folder is /res/themes. For additional themes, you can develop them yourself or download the MusicFerr theme and place it in this directory. The software will automatically read and apply the theme upon startup.
+- Remove the speed playback button
+- Remove the sidebar groups related to online, local, and playlist, keeping it simple and clear.
 
+---
 
 ## Unreleased
 
